@@ -1,0 +1,62 @@
+Source: ocaml-csexp
+Section: ocaml
+Priority: optional
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders: Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml-nox,
+ ocaml-dune (>= 1.11),
+ dh-ocaml
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-csexp
+Vcs-Git: https://salsa.debian.org/ocaml-team/ocaml-csexp.git
+Homepage: https://github.com/ocaml-dune/csexp
+
+Package: libcsexp-ocaml-dev
+Provides: ${ocaml:Provides}
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Suggests: ocaml-findlib
+Description: parsing and printing of S-expressions in Canonical form (dev)
+ This library provides minimal support for Canonical
+ S-expressions. Canonical S-expressions are a binary encoding of
+ S-expressions that is super simple and well suited for communication
+ between programs.
+ .
+ This library only provides a few helpers for simple applications. If
+ you need more advanced support, such as parsing from more fancy input
+ sources, you should consider copying the code of this library given
+ how simple parsing S-expressions in canonical form is.
+ .
+ To avoid a dependency on a particular S-expression library, the only
+ module of this library is parameterised by the type of S-expressions.
+ .
+ This package contains development files.
+
+Package: libcsexp-ocaml
+Provides: ${ocaml:Provides}
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: parsing and printing of S-expressions in Canonical form (runtime)
+ This library provides minimal support for Canonical
+ S-expressions. Canonical S-expressions are a binary encoding of
+ S-expressions that is super simple and well suited for communication
+ between programs.
+ .
+ This library only provides a few helpers for simple applications. If
+ you need more advanced support, such as parsing from more fancy input
+ sources, you should consider copying the code of this library given
+ how simple parsing S-expressions in canonical form is.
+ .
+ To avoid a dependency on a particular S-expression library, the only
+ module of this library is parameterised by the type of S-expressions.
+ .
+ This package contains runtime files.

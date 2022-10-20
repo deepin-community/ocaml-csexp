@@ -1,0 +1,8 @@
+@OCamlStdlibDir@/csexp/*opam*
+@OCamlStdlibDir@/csexp/*dune*
+@OCamlStdlibDir@/csexp/*.ml*
+@OCamlStdlibDir@/csexp/*.cmi
+@OCamlStdlibDir@/csexp/*.cmt*
+OPT: @OCamlStdlibDir@/csexp/*.a
+OPT: @OCamlStdlibDir@/csexp/*.cmx
+OPT: @OCamlStdlibDir@/csexp/*.cmxa
