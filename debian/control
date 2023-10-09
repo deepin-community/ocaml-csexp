@@ -5,9 +5,9 @@ Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
 Uploaders: Stéphane Glondu <glondu@debian.org>
 Build-Depends:
  debhelper-compat (= 13),
- ocaml-nox,
+ ocaml,
  ocaml-dune (>= 1.11),
- dh-ocaml
+ dh-ocaml (>= 1.2)
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-csexp

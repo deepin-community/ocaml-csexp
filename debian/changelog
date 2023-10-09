@@ -1,3 +1,22 @@
+ocaml-csexp (1.5.2-4) unstable; urgency=medium
+
+  * Depend on ocaml instead of transitional ocaml-nox
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 12 Sep 2023 07:48:41 +0200
+
+ocaml-csexp (1.5.2-3) unstable; urgency=medium
+
+  * Include ocamlvars.mk in debian/rules
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 23 Jul 2023 06:47:52 +0200
+
+ocaml-csexp (1.5.2-2) unstable; urgency=medium
+
+  * New upstream release
+  * Use ocaml_dune DH buildsystem
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 15 Jul 2023 11:02:43 +0200
+
 ocaml-csexp (1.5.1-1) unstable; urgency=medium
 
   * New upstream release

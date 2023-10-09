@@ -1,1 +1,4 @@
-.pc/
+_opam
+_build
+*.install
+.merlin
